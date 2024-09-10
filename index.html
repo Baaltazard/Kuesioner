@@ -9,7 +9,7 @@
   <body>
     <div class="container">
         <div class="container">
-            <nav class="navbar bg-light shadow fixed-top opacity-75">
+            <nav class="navbar bg-light shadow fixed-top opacity-100">
                 <div class="container">
                   <a class="navbar-brand text-wrap text-center" href="#">
                     <h2 class="text-center">KUESIONER KEPUASAN KERJA PEGAWAI PUSKESMAS TRENGGALEK TAHUN 2024</h2>
@@ -18,26 +18,41 @@
             </nav>  
         </div>
         
-        <br><br><p class="text-white mt-2">asdasdasdasdasdasdasd</p><br>
-        <!-- <p class="text-white">asdasdasdasdasdasdasd</p><br> -->
+        <br><p class="text-white mt-2">asdasdasdasdasdasdasd</p>
+        <p class="text-white">asdasdasdasdasdasdasd</p><br>
+         <!-- <div class="card  shadow">
+             <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <img src="pkmlogo.png" width="250" alt="logo-pkm">
+                    </div>
+                    <div class="col text-end">
+                        <p><?php echo date('l, d-m-Y  h:i:s a');?></p>
+                    </div>
+                </div>
+                
+            </div>
+         </div> -->
+         <img src="pkmlogo.png" width="250" alt="logo-pkm">
         <div class="card shadow-lg mt-4">
             <div class="card-body">
                 <h4>Identitas Responden</h4><hr>
-                <form class="needs-validation" name="submit-to-google-sheet" novalidate>
-                    
+                <div class="container">
+                <form  name="submit-to-google-sheet" >
+                    <!-- class="needs-validation" -->
                     <div class="mb-3 row">
-                        <label  class="col-sm-2 col-form-label">Nama*</label>
+                        <label  class="col-sm-2 col-form-label text-danger">Nama*</label>
                         <div class="col-sm-10">
-                            <input type="text" name="nama" class="form-control" id="staticEmail" required >
+                            <input type="text" name="nama" class="form-control" style="text-transform:capitalize" id="staticEmail" required >
                             <div class="invalid-feedback">
                                 *Nama tidak boleh kosong!
                               </div>
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="inputPassword" class="col-sm-2 col-form-label">Tempat Tugas*</label>
+                        <label for="inputPassword" class="col-sm-2 col-form-label text-danger">Tempat Tugas*</label>
                         <div class="col-sm-10">
-                            <input type="text" name="tempatkerja" class="form-control" id="inputPassword" required>
+                            <input type="text" name="tempatkerja" style="text-transform:capitalize" class="form-control" id="inputPassword" required>
                             <div class="invalid-feedback">
                                 *Tempat Tugas tidak boleh kosong!
                               </div>
@@ -157,7 +172,7 @@
                         </div>
                     </div><hr><h6>GAJI/KOMPENSASI</h6>
                     <div class="mb-3 row">
-                        <label  class="col-sm-5 col-form-label">8. Apakah anda puas dengan penghasilan dan / tunjangan yang diterima saat ini?*</label>
+                        <label  class="col-sm-5 col-form-label">8. Apakah anda puas dengan gaji dan / tunjangan yang diterima saat ini?*</label>
                         <div class="col-sm">
                             <select name="8" class="form-select" id=""required>
                                 <option value="">Choose one</option>
@@ -189,7 +204,7 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label  class="col-sm-5 col-form-label">10. Apakah anda puas denngan penghargaan yang diberikan atas prestasi kerja yang anda capai?*</label>
+                        <label  class="col-sm-5 col-form-label">10. Apakah anda puas dengan jaspel / TPP yang anda terima?*</label>
                         <div class="col-sm">
                             <select name="10" class="form-select" id=""required>
                                 <option value="">Choose one</option>
@@ -205,7 +220,7 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label  class="col-sm-5 col-form-label">11. Apakah anda puas bahwa kesempatan yang diberikan pimpinan untuk mengikuti pendidikan dan pelatihan cukup adil dan memuaskan?*</label>
+                        <label  class="col-sm-5 col-form-label">11. Apakah anda puas dengan penghargaan yang diberikan atas prestasi kerja yang anda capai?*</label>
                         <div class="col-sm">
                             <select name="11" class="form-select" id=""required>
                                 <option value="">Choose one</option>
@@ -221,7 +236,7 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label  class="col-sm-5 col-form-label">12. Apakah anda puas tentang pengajuan cuti pegawai yang mudah?*</label>
+                        <label  class="col-sm-5 col-form-label">12. Apakah anda puas bahwa kesempatan yang diberikan pimpinan untuk mengikuti pendidikan dan pelatihan cukup adil dan memuaskan?*</label>
                         <div class="col-sm">
                             <select name="12" class="form-select" id=""required>
                                 <option value="">Choose one</option>
@@ -235,10 +250,10 @@
                                 *Please select a valid state.
                               </div>
                         </div>
-                    </div><hr>
-                    <h6>SIFAT PEKERJAAN</h6>
+                    </div>
+                    
                     <div class="mb-3 row">
-                        <label  class="col-sm-5 col-form-label">13. Apakah anda merasa puas dengan pekerjaan anda saat ini?*</label>
+                        <label  class="col-sm-5 col-form-label">13. Apakah anda puas tentang pengajuan cuti pegawai yang mudah*</label>
                         <div class="col-sm">
                             <select name="13" class="form-select" id=""required>
                                 <option value="">Choose one</option>
@@ -253,8 +268,9 @@
                               </div>
                         </div>
                     </div>
+                    <h6>SIFAT PEKERJAAN</h6><hr>
                     <div class="mb-3 row">
-                        <label  class="col-sm-5 col-form-label">14. Puaskah anda dengan jam kerja yang anda lakukan?*</label>
+                        <label  class="col-sm-5 col-form-label">14. Apakah anda merasa puas dengan pekerjaan anda saat ini*</label>
                         <div class="col-sm">
                             <select name="14" class="form-select" id=""required>
                                 <option value="">Choose one</option>
@@ -270,7 +286,7 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label  class="col-sm-5 col-form-label">15. Apakah anda sudah puas dengan prestasi yang telah anda capai selama ini?*</label>
+                        <label  class="col-sm-5 col-form-label">15. Puaskah anda dengan jam kerja yang anda lakukan saat ini*</label>
                         <div class="col-sm">
                             <select name="15" class="form-select" id=""required>
                                 <option value="">Choose one</option>
@@ -286,7 +302,7 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label  class="col-sm-5 col-form-label">16. Apakah anda puas dengan status yang anda miliki sebagai karyawan di tempat ini?*</label>
+                        <label  class="col-sm-5 col-form-label">16. Apakah anda sudah puas dengan prestasi yang telah anda capai selama ini?*</label>
                         <div class="col-sm">
                             <select name="16" class="form-select" id=""required>
                                 <option value="">Choose one</option>
@@ -300,10 +316,10 @@
                                 *Please select a valid state.
                               </div>
                         </div>
-                    </div><hr>
-                    <h6>ATASAN</h6>
+                    </div>
+                    
                     <div class="mb-3 row">
-                        <label  class="col-sm-5 col-form-label">17. Apakah anda puas saat komunikasi antara anda dengan atasan anda?*</label>
+                        <label  class="col-sm-5 col-form-label">17. Apakah anda puas dengan status jabatan yang anda miliki sebagai karyawan di tempat ini?*</label>
                         <div class="col-sm">
                             <select name="17" class="form-select" id=""required>
                                 <option value="">Choose one</option>
@@ -318,8 +334,9 @@
                               </div>
                         </div>
                     </div>
+                    <h6>ATASAN</h6><hr>
                     <div class="mb-3 row">
-                        <label  class="col-sm-5 col-form-label">18. Apakah anda puas dengan arahan, bimbingan dan pembinaan atasan terhadap anda?*</label>
+                        <label  class="col-sm-5 col-form-label">18. Apakah anda puas saat komunikasi antara anda dengan atasan anda?*</label>
                         <div class="col-sm">
                             <select name="18" class="form-select" id=""required>
                                 <option value="">Choose one</option>
@@ -335,7 +352,7 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label  class="col-sm-5 col-form-label">19. Apakah anda puas terhadap kemampuan dan kemudahan dalam pengambilan keputusan atasan?*</label>
+                        <label  class="col-sm-5 col-form-label">19. Apakah anda puas dengan arahan, bimbingan dan pembinaan atasan terhadap anda?*</label>
                         <div class="col-sm">
                             <select name="19" class="form-select" id=""required>
                                 <option value="">Choose one</option>
@@ -350,7 +367,7 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label  class="col-sm-5 col-form-label">20. Apakah anda puas dengan kinerja atasan?*</label>
+                        <label  class="col-sm-5 col-form-label">20. Apakah anda puas terhadap kemampuan dan kemudahan dalam pengambilan keputusan atasan?*</label>
                         <div class="col-sm">
                             <select name="20" class="form-select" id=""required>
                                 <option value="">Choose one</option>
@@ -363,10 +380,10 @@
                                 *Please select a valid state.
                               </div>
                         </div>
-                    </div><hr>
-                    <h6>REKAN KERJA</h6>
+                    </div>
+                    
                     <div class="mb-3 row">
-                        <label  class="col-sm-5 col-form-label">21. Apakah anda merasa puas terhadap peranan rekan sekerja anda dalam mendorong kesuksesan pekerjaan anda? *</label>
+                        <label  class="col-sm-5 col-form-label">21. Apakah anda puas dengan kinerja atasan?*</label>
                         <div class="col-sm">
                             <select name="21" class="form-select" id=""required>
                                 <option value="">Choose one</option>
@@ -380,10 +397,26 @@
                               </div>
                         </div>
                     </div>
+                    <h6>REKAN KERJA</h6><hr>
                     <div class="mb-3 row">
-                        <label  class="col-sm-5 col-form-label">22. Apakah anda puas dengan rekan kerja anda dapat menciptakan suasana yang harmonis dalam bekerja? *</label>
+                        <label  class="col-sm-5 col-form-label">22. Apakah anda merasa puas terhadap peranan rekan sekerja anda dalam mendorong kesuksesan pekerjaan anda?*</label>
                         <div class="col-sm">
                             <select name="22" class="form-select" id=""required>
+                                <option value="">Choose one</option>
+                                <option value="Tidak Puas">Tidak Puas</option>
+                                <option value="Kurang Puas">Kurang Puas</option>
+                                <option value="Puas">Puas</option>
+                                <option value="Sangat Puas">Sangat Puas</option>  
+                            </select>
+                            <div class="invalid-feedback">                                   
+                                *Please select a valid state.
+                              </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label  class="col-sm-5 col-form-label">23. Apakah anda puas dengan rekan kerja anda dapat menciptakan suasana yang harmonis dalam bekerja?*</label>
+                        <div class="col-sm">
+                            <select name="23" class="form-select" id=""required>
                                 <option value="">Choose one</option>
                                 <option value="Tidak Puas">Tidak Puas</option>
                                 <option value="Kurang Puas">Kurang Puas</option>
@@ -415,13 +448,13 @@
                         </button>
                     </div>
                 </form>
-                
+            </div>
             </div>
                 
         </div>
         <br>
               <footer class="mt-2 mb-2 text-center">
-                <h5>Puskesmas Trenggalek | <small>@yoga</small></h5>
+                <h9>Puskesmas Trenggalek | <small>@yoga</small></h9>
                 <br>
               </footer>  
     </div>
